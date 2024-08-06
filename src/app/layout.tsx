@@ -5,7 +5,6 @@ import ConvexClientProvider from "./ConvexClientProvider";
 import { Header } from "./header";
 import { Toaster } from "@/components/ui/toaster";
 import { Footer } from "./footer";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,7 +17,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
+  return ( 
+   
     <html lang="en">
       <body className={inter.className}>
         <ConvexClientProvider>
@@ -29,5 +29,6 @@ export default function RootLayout({
         </ConvexClientProvider>
       </body>
     </html>
+   
   );
 }

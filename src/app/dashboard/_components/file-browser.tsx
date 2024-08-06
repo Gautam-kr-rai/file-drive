@@ -72,7 +72,8 @@ export function FileBrowser({
         }
       : "skip"
   );
-  const isLoading = files === undefined;
+
+  const isLoading = files === undefined || favorites === undefined;
 
   const modifiedFiles =
     files?.map((file) => ({
@@ -140,7 +141,7 @@ export function FileBrowser({
           </div>
         </TabsContent>
         <TabsContent value="table">
-          <DataTable columns={columns} data={modifiedFiles} />
+          {/* <DataTable columns={columns} data={modifiedFiles} /> */}
         </TabsContent>
       </Tabs>
 

@@ -1,8 +1,8 @@
 export default {
   providers: [
     {
-      domain: "https://poetic-salmon-66.clerk.accounts.dev",
+      domain: "https://causal-tarpon-98.clerk.accounts.dev",
       applicationID: "convex",
     },
-  ],
+  ]
 };
